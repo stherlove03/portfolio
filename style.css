@@ -54,6 +54,13 @@ a {
 .expertise{
     background-color: #ffffff;
 }
+.expertise h2,h6{
+    text-align: center;
+}
+#progress-bar{
+    width: 40%;
+    margin: auto;
+}
 .portfolio{
     background-color: #d9230f;
 }
@@ -63,7 +70,40 @@ a {
     margin-bottom: 40px;
     
 }
+.testimony{
+    background-color: #ffffff;
+}
+.testimony h2{
+    color: #d9230f;
+    text-align: center;
+}
+.temoignages-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.temoignage {
+    width: calc(33.33% - 20px);
+    padding: 10px;
+    border: 1px solid #d9230f;
+    text-align: center;
+}
+
+.temoignage img {
+    width: 150px; /* Largeur de l'image */
+    height: 150px; /* Hauteur de l'image */
+    border-radius: 50%; /* Pour un effet arrondi sur l'image */
+    margin-bottom: 10px;
+}
+
+.temoignage h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.temoignage p {
+    font-size: 14px;
+}
 form h2, p {
     text-align: center;
     color: #000000;
@@ -79,6 +119,7 @@ form{
 .form-contact{
     background-color: 
 }
+
 form fieldset{
     width: 40%;
     margin: auto;
@@ -88,8 +129,8 @@ form fieldset{
     margin-bottom: 20px;
 }
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color:#d9230f;
+    
     padding: 2rem 0;
   }
   
@@ -99,21 +140,9 @@ form fieldset{
   
   .footer-text {
     margin-bottom: 0;
+    color: #ffffff;
   }
   
-  @media (max-width: 767.98px) {
-    .footer .col-md-3 {
-      text-align: center;
-    }
-    .footer .col-md-6 {
-      order: 1;
-      text-align: center;
-    }
-    .footer .col-md-3 {
-      order: 2;
-      text-align: center;
-    }
-  }
 @media screen and (max-width: 996px) {
     .me {
       flex-direction: column;
@@ -128,23 +157,37 @@ form fieldset{
       text-align: center;
       order: 2;
     }
-  
     .me img {
       order: 1;
       margin-bottom: 10px;
       width: 150%;
     }
+    #progress-bar{
+        width: 100%;
+        margin: auto;
+    }
     form fieldset{
         width: 100%;
     }
-    /*.expertise img {
-        order: 1;
-        margin-bottom: 10px;
-        width: 100%;
+    .footer .col-md-3 {
+        text-align: center;
       }
-      .expertise {
+    .footer .col-md-6 {
+        order: 1;
+        text-align: center;
+      }
+    .footer .col-md-3 {
+        order: 2;
+        text-align: center;
+      }
+      .temoignages-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-      }*/
+    }
+
+    .temoignage {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
